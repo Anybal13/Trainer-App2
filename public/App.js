@@ -233,7 +233,7 @@ function PlanModal({ plan, onSave, onClose }) {
           ))}
         </div>
 
-        <label style={S.label}>Jours d'entraînement</label>
+        <label style={S.label}>{"Jours d'entraînement"}</label>
         <div style={S.dayGrid}>
           {DAYS.map((d, i) => (
             <button key={i} onClick={() => toggleDay(i)} style={S.dayBtn(days.includes(i), color)}>{d}</button>
@@ -1102,7 +1102,7 @@ export default function App() {
                             <span style={{ fontSize: 12, fontWeight: 800, color: checked ? p.color : isTodayDay ? "#fff" : "#666", letterSpacing: 1 }}>
                               {FULL_DAYS[dayIdx].slice(0, 3).toUpperCase()}
                             </span>
-                            {isTodayDay && !checked && <span style={{ fontSize: 9, color: "#e85d04", fontWeight: 800, letterSpacing: 1 }}>AUJOURD'HUI</span>}
+                            {isTodayDay && !checked && <span style={{ fontSize: 9, color: "#e85d04", fontWeight: 800, letterSpacing: 1 }}>{"AUJOURD'HUI"}</span>}
                           </button>
                         );
                       })}
